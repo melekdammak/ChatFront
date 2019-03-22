@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+<p>Users:</p>
+
+        <div *ngFor="let user of users">
+            <a [routerLink]="['/Chatters']">
+              {{user.username}}
+            </a>
+
+        </div>
+        <hr>

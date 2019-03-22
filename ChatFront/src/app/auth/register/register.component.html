@@ -1,0 +1,25 @@
+<div id="logreg-forms">
+  <form class="form-signin" [formGroup]="formRegister" (ngSubmit)="registerBtn(formRegister)">
+    <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign up</h1>
+
+    <div style="text-align: center" class="input-group">
+      <input type="email" id="inputUsername" formControlName="username" class="form-control" placeholder="Username" required=""
+        autofocus="">
+    </div>
+    <div style="text-align: center" class="input-group">
+      <input type="email" id="inputEmail" formControlName="email" class="form-control" placeholder="Email address"
+        required="" autofocus="">
+    </div>
+    <div style="text-align: center" class="input-group">
+      <input type="password" id="inputPassword" formControlName="password" class="form-control" placeholder="Password"
+        required="">
+    </div>
+
+    <div style="text-align: center" class="input-group">
+      <button class="btn btn-md btn-rounded btn-block form-control submit" type="submit"><i class="fas fa-sign-in-alt"></i>
+        Sign up</button>
+    </div>
+    <hr>
+  </form>
+
+</div>

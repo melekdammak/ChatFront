@@ -1,0 +1,18 @@
+
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li *ngIf="!cookieValue" class="nav-item">
+        <a class="fas fa-sign-in-alt" [routerLink]="['/auth/login']">Login</a>
+      </li>
+      <li *ngIf="!cookieValue" class="nav-item">
+        <a class="fas fa-sign-in-alt" [routerLink]="['/auth/register']">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/Chatters']">Chatters</a>
+      </li>
+      <li *ngIf="cookieValue?.length > 0" class="nav-item">
+        <a class="fas fa-sign-out-alt" role="button" style="cursor:pointer" (click)="logoutBtn()">Logout</a>
+      </li>
+
+    </ul>
+  </div>
